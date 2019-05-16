@@ -1,0 +1,204 @@
+EESchema Schematic File Version 4
+LIBS:ButtonBoard-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SF17020F-0302-21R-L-015:SF17020F-0302-21R-L-015 S1
+U 1 1 5CDDE643
+P 4450 2650
+F 0 "S1" H 4850 2915 50  0000 C CNN
+F 1 "SF17020F-0302-21R-L-015" H 4850 2824 50  0000 C CNN
+F 2 "SF17020F-0302-21R-L-015:SF17020F030221RL015" H 5100 2750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SF17020F-0302-21R-L-015.pdf" H 5100 2650 50  0001 L CNN
+F 4 "Pushbutton Switches 3PDT STOMP/FOOT SW LATCHING 1A9VDC 9PIN" H 5100 2550 50  0001 L CNN "Description"
+F 5 "41.2" H 5100 2450 50  0001 L CNN "Height"
+F 6 "107-SF17020F-32-21RL" H 5100 2350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=107-SF17020F-32-21RL" H 5100 2250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Alpha (Taiwan)" H 5100 2150 50  0001 L CNN "Manufacturer_Name"
+F 9 "SF17020F-0302-21R-L-015" H 5100 2050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5CDDF04D
+P 9950 1250
+F 0 "#FLG01" H 9950 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 9950 1423 50  0000 C CNN
+F 2 "" H 9950 1250 50  0001 C CNN
+F 3 "~" H 9950 1250 50  0001 C CNN
+	1    9950 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5CDDF4B8
+P 10400 1250
+F 0 "#PWR03" H 10400 1000 50  0001 C CNN
+F 1 "GND" H 10405 1077 50  0000 C CNN
+F 2 "" H 10400 1250 50  0001 C CNN
+F 3 "" H 10400 1250 50  0001 C CNN
+	1    10400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR02
+U 1 1 5CDDFB07
+P 9950 1100
+F 0 "#PWR02" H 9950 950 50  0001 C CNN
+F 1 "+9V" H 9965 1273 50  0000 C CNN
+F 2 "" H 9950 1100 50  0001 C CNN
+F 3 "" H 9950 1100 50  0001 C CNN
+	1    9950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CDE024C
+P 6450 2650
+F 0 "D1" H 6443 2866 50  0000 C CNN
+F 1 "LED" H 6443 2775 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6450 2650 50  0001 C CNN
+F 3 "~" H 6450 2650 50  0001 C CNN
+	1    6450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CDE095C
+P 6950 2650
+F 0 "R1" V 6743 2650 50  0000 C CNN
+F 1 "1k" V 6834 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6880 2650 50  0001 C CNN
+F 3 "~" H 6950 2650 50  0001 C CNN
+	1    6950 2650
+	0    1    1    0   
+$EndComp
+Text GLabel 3500 2750 0    50   Input ~ 0
+Input
+Text GLabel 3500 3100 0    50   Input ~ 0
+Ouput
+Text GLabel 3500 2600 0    50   Input ~ 0
+ToEffect
+Text GLabel 3500 2950 0    50   Input ~ 0
+FromEffect
+Wire Wire Line
+	4450 2750 3500 2750
+Wire Wire Line
+	4450 2650 4000 2650
+Wire Wire Line
+	4000 2650 4000 2600
+Wire Wire Line
+	4000 2600 3500 2600
+Wire Wire Line
+	4450 2850 4100 2850
+Wire Wire Line
+	4100 2850 4100 3450
+Wire Wire Line
+	5650 3450 5650 2650
+Wire Wire Line
+	5650 2650 5250 2650
+Wire Wire Line
+	4450 2950 3500 2950
+Wire Wire Line
+	4450 3050 4000 3050
+Wire Wire Line
+	4000 3050 4000 3100
+Wire Wire Line
+	4000 3100 3500 3100
+$Comp
+L power:GND #PWR01
+U 1 1 5CDE8D43
+P 6150 3200
+F 0 "#PWR01" H 6150 2950 50  0001 C CNN
+F 1 "GND" H 6155 3027 50  0000 C CNN
+F 2 "" H 6150 3200 50  0001 C CNN
+F 3 "" H 6150 3200 50  0001 C CNN
+	1    6150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5CDE93FE
+P 10400 1100
+F 0 "#FLG02" H 10400 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 10400 1273 50  0000 C CNN
+F 2 "" H 10400 1100 50  0001 C CNN
+F 3 "~" H 10400 1100 50  0001 C CNN
+	1    10400 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 1100 10400 1250
+Wire Wire Line
+	9950 1100 9950 1250
+Wire Wire Line
+	6000 2650 6300 2650
+Wire Wire Line
+	5250 2750 6000 2750
+Wire Wire Line
+	6000 2750 6000 2650
+Wire Wire Line
+	5250 2850 6150 2850
+Wire Wire Line
+	6150 2850 6150 3200
+Wire Wire Line
+	6600 2650 6800 2650
+Wire Wire Line
+	7100 2650 7500 2650
+NoConn ~ 5250 2950
+Wire Wire Line
+	4100 3450 5650 3450
+Text GLabel 8150 2950 0    50   Input ~ 0
+ToEffect
+Text GLabel 8150 3050 0    50   Input ~ 0
+Input
+Text GLabel 8150 3150 0    50   Input ~ 0
+FromEffect
+Text GLabel 8150 3250 0    50   Input ~ 0
+Ouput
+Wire Wire Line
+	8150 2950 8350 2950
+Wire Wire Line
+	8350 3050 8150 3050
+Wire Wire Line
+	8350 3150 8150 3150
+Wire Wire Line
+	8350 3250 8150 3250
+Connection ~ 6150 2850
+NoConn ~ 3850 6350
+NoConn ~ 3900 6300
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5CDE179D
+P 8550 3250
+F 0 "J1" H 8522 3132 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 8522 3223 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical" H 8550 3250 50  0001 C CNN
+F 3 "~" H 8550 3250 50  0001 C CNN
+	1    8550 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 2850 6500 3450
+Wire Wire Line
+	6150 2850 6500 2850
+Wire Wire Line
+	7500 2650 7500 3350
+Wire Wire Line
+	7500 3350 8350 3350
+Wire Wire Line
+	6500 3450 8350 3450
+$EndSCHEMATC
