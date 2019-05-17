@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/mmora/Dev/ButtonBoard/ButtonBoard.sch)
-    (date "Thursday, May 16, 2019 at 04:19:43 PM")
+    (date "Friday, May 17, 2019 at 12:54:34 PM")
     (tool "Eeschema (5.1.2-1)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -31,7 +31,7 @@
       (tstamp 5CDDE643))
     (comp (ref D1)
       (value LED)
-      (footprint LED_THT:LED_D3.0mm)
+      (footprint LEDs:LED_Rectangular_W3.0mm_H2.0mm)
       (datasheet ~)
       (libsource (lib Device) (part LED) (description "Light emitting diode"))
       (sheetpath (names /) (tstamps /))
