@@ -20,7 +20,7 @@ U 1 1 5CDDE643
 P 4450 2650
 F 0 "S1" H 4850 2915 50  0000 C CNN
 F 1 "SF17020F-0302-21R-L-015" H 4850 2824 50  0000 C CNN
-F 2 "SF17020F-0302-21R-L-015:SF17020F030221RL015" H 5100 2750 50  0001 L CNN
+F 2 "Footswitch:Footswitch_3PDT" H 5100 2750 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/SF17020F-0302-21R-L-015.pdf" H 5100 2650 50  0001 L CNN
 F 4 "Pushbutton Switches 3PDT STOMP/FOOT SW LATCHING 1A9VDC 9PIN" H 5100 2550 50  0001 L CNN "Description"
 F 5 "41.2" H 5100 2450 50  0001 L CNN "Height"
@@ -178,8 +178,6 @@ Wire Wire Line
 Wire Wire Line
 	8350 3250 8150 3250
 Connection ~ 6150 2850
-NoConn ~ 3850 6350
-NoConn ~ 3900 6300
 $Comp
 L Connector:Conn_01x06_Male J1
 U 1 1 5CDE179D
@@ -201,4 +199,52 @@ Wire Wire Line
 	7500 3350 8350 3350
 Wire Wire Line
 	6500 3450 8350 3450
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5CF5505F
+P 2500 1050
+F 0 "H2" H 2600 1099 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2800 1100 50  0000 L CNN
+F 2 "Wire_Pads:SolderWirePad_single_1mmDrill" H 2500 1050 50  0001 C CNN
+F 3 "~" H 2500 1050 50  0001 C CNN
+	1    2500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5CF555B7
+P 2200 1050
+F 0 "H1" H 2300 1099 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1450 1100 50  0000 L CNN
+F 2 "Wire_Pads:SolderWirePad_single_1mmDrill" H 2200 1050 50  0001 C CNN
+F 3 "~" H 2200 1050 50  0001 C CNN
+	1    2200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5CF566E5
+P 2200 1300
+F 0 "#PWR0101" H 2200 1050 50  0001 C CNN
+F 1 "GND" H 2205 1127 50  0000 C CNN
+F 2 "" H 2200 1300 50  0001 C CNN
+F 3 "" H 2200 1300 50  0001 C CNN
+	1    2200 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CF56BC4
+P 2500 1300
+F 0 "#PWR0102" H 2500 1050 50  0001 C CNN
+F 1 "GND" H 2505 1127 50  0000 C CNN
+F 2 "" H 2500 1300 50  0001 C CNN
+F 3 "" H 2500 1300 50  0001 C CNN
+	1    2500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1300 2200 1150
+Wire Wire Line
+	2500 1300 2500 1150
 $EndSCHEMATC
