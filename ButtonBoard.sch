@@ -67,53 +67,33 @@ $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5CDE024C
-P 6450 2650
-F 0 "D1" H 6443 2866 50  0000 C CNN
-F 1 "LED" H 6443 2775 50  0000 C CNN
-F 2 "LEDs:LED_Rectangular_W3.0mm_H2.0mm" H 6450 2650 50  0001 C CNN
-F 3 "~" H 6450 2650 50  0001 C CNN
-	1    6450 2650
+P 6450 2050
+F 0 "D1" H 6443 2266 50  0000 C CNN
+F 1 "LED" H 6443 2175 50  0000 C CNN
+F 2 "LEDs:LED_Rectangular_W3.0mm_H2.0mm" H 6450 2050 50  0001 C CNN
+F 3 "~" H 6450 2050 50  0001 C CNN
+	1    6450 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5CDE095C
-P 6950 2650
-F 0 "R1" V 6743 2650 50  0000 C CNN
-F 1 "1k" V 6834 2650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6880 2650 50  0001 C CNN
-F 3 "~" H 6950 2650 50  0001 C CNN
-	1    6950 2650
+P 6950 2050
+F 0 "R1" V 6743 2050 50  0000 C CNN
+F 1 "1k" V 6834 2050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6880 2050 50  0001 C CNN
+F 3 "~" H 6950 2050 50  0001 C CNN
+	1    6950 2050
 	0    1    1    0   
 $EndComp
-Text GLabel 3500 2750 0    50   Input ~ 0
+Text GLabel 5450 2850 2    50   Input ~ 0
 Input
 Text GLabel 3500 3100 0    50   Input ~ 0
-Ouput
-Text GLabel 3500 2600 0    50   Input ~ 0
+Output
+Text GLabel 5450 2750 2    50   Input ~ 0
 ToEffect
 Text GLabel 3500 2950 0    50   Input ~ 0
 FromEffect
-Wire Wire Line
-	4450 2750 3500 2750
-Wire Wire Line
-	4450 2650 4000 2650
-Wire Wire Line
-	4000 2650 4000 2600
-Wire Wire Line
-	4000 2600 3500 2600
-Wire Wire Line
-	4450 2850 4100 2850
-Wire Wire Line
-	4100 2850 4100 3450
-Wire Wire Line
-	5650 3450 5650 2650
-Wire Wire Line
-	5650 2650 5250 2650
-Wire Wire Line
-	4450 2950 3500 2950
-Wire Wire Line
-	4450 3050 4000 3050
 Wire Wire Line
 	4000 3050 4000 3100
 Wire Wire Line
@@ -121,12 +101,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR01
 U 1 1 5CDE8D43
-P 6150 3200
-F 0 "#PWR01" H 6150 2950 50  0001 C CNN
-F 1 "GND" H 6155 3027 50  0000 C CNN
-F 2 "" H 6150 3200 50  0001 C CNN
-F 3 "" H 6150 3200 50  0001 C CNN
-	1    6150 3200
+P 4250 3550
+F 0 "#PWR01" H 4250 3300 50  0001 C CNN
+F 1 "GND" H 4255 3377 50  0000 C CNN
+F 2 "" H 4250 3550 50  0001 C CNN
+F 3 "" H 4250 3550 50  0001 C CNN
+	1    4250 3550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -145,22 +125,9 @@ Wire Wire Line
 Wire Wire Line
 	9950 1100 9950 1250
 Wire Wire Line
-	6000 2650 6300 2650
+	6600 2050 6800 2050
 Wire Wire Line
-	5250 2750 6000 2750
-Wire Wire Line
-	6000 2750 6000 2650
-Wire Wire Line
-	5250 2850 6150 2850
-Wire Wire Line
-	6150 2850 6150 3200
-Wire Wire Line
-	6600 2650 6800 2650
-Wire Wire Line
-	7100 2650 7500 2650
-NoConn ~ 5250 2950
-Wire Wire Line
-	4100 3450 5650 3450
+	7100 2050 7500 2050
 Text GLabel 8150 2950 0    50   Input ~ 0
 ToEffect
 Text GLabel 8150 3050 0    50   Input ~ 0
@@ -168,7 +135,7 @@ Input
 Text GLabel 8150 3150 0    50   Input ~ 0
 FromEffect
 Text GLabel 8150 3250 0    50   Input ~ 0
-Ouput
+Output
 Wire Wire Line
 	8150 2950 8350 2950
 Wire Wire Line
@@ -177,7 +144,6 @@ Wire Wire Line
 	8350 3150 8150 3150
 Wire Wire Line
 	8350 3250 8150 3250
-Connection ~ 6150 2850
 $Comp
 L Connector:Conn_01x06_Male J1
 U 1 1 5CDE179D
@@ -190,21 +156,15 @@ F 3 "~" H 8550 3250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6500 2850 6500 3450
-Wire Wire Line
-	6150 2850 6500 2850
-Wire Wire Line
-	7500 2650 7500 3350
+	7500 2050 7500 3350
 Wire Wire Line
 	7500 3350 8350 3350
-Wire Wire Line
-	6500 3450 8350 3450
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5CF5505F
 P 2500 1050
 F 0 "H2" H 2600 1099 50  0000 L CNN
-F 1 "MountingHole_Pad" H 2800 1100 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2550 900 50  0000 L CNN
 F 2 "Wire_Pads:SolderWirePad_single_1mmDrill" H 2500 1050 50  0001 C CNN
 F 3 "~" H 2500 1050 50  0001 C CNN
 	1    2500 1050
@@ -215,7 +175,7 @@ L Mechanical:MountingHole_Pad H1
 U 1 1 5CF555B7
 P 2200 1050
 F 0 "H1" H 2300 1099 50  0000 L CNN
-F 1 "MountingHole_Pad" H 1450 1100 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1450 900 50  0000 L CNN
 F 2 "Wire_Pads:SolderWirePad_single_1mmDrill" H 2200 1050 50  0001 C CNN
 F 3 "~" H 2200 1050 50  0001 C CNN
 	1    2200 1050
@@ -247,4 +207,41 @@ Wire Wire Line
 	2200 1300 2200 1150
 Wire Wire Line
 	2500 1300 2500 1150
+Wire Wire Line
+	4450 2950 3500 2950
+Wire Wire Line
+	4450 2750 4250 2750
+Wire Wire Line
+	4250 2750 4250 3450
+Wire Wire Line
+	4250 3450 8350 3450
+Wire Wire Line
+	4250 3450 4250 3550
+Connection ~ 4250 3450
+Wire Wire Line
+	5450 2850 5250 2850
+Wire Wire Line
+	4450 2650 4100 2650
+Wire Wire Line
+	4100 2650 4100 2050
+Wire Wire Line
+	4000 2850 4450 2850
+Wire Wire Line
+	4000 3050 4450 3050
+Wire Wire Line
+	5250 2650 5850 2650
+Wire Wire Line
+	5850 2650 5850 2950
+Wire Wire Line
+	5850 2950 5250 2950
+Wire Wire Line
+	5250 2750 5450 2750
+Text GLabel 3500 2800 0    50   Input ~ 0
+ToEffect
+Wire Wire Line
+	3500 2800 4000 2800
+Wire Wire Line
+	4000 2800 4000 2850
+Wire Wire Line
+	4100 2050 6300 2050
 $EndSCHEMATC
