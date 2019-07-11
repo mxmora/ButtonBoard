@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/mmora/Dev/ButtonBoard/ButtonBoard.sch)
-    (date "Monday, July 01, 2019 at 06:16:36 PM")
+    (date "Wednesday, July 10, 2019 at 03:38:30 PM")
     (tool "Eeschema (5.1.2-1)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -44,8 +44,8 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5CDE095C))
     (comp (ref J1)
-      (value Conn_01x06_Male)
-      (footprint Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical)
+      (value GND)
+      (footprint Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x06_Male) (description "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
